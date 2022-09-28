@@ -19,7 +19,7 @@ for fifty in range(3): #50 cent pieces
         for dimes in range(11): #10 cent pieces
             for nickels in range(51): #5 cent pieces
                 for pennies in range(101): #1 cent pieces
-                    amt = fifty + quarter + dimes + nickels + pennies
+                    amt = fifty*50 + quarter*25 + dimes*10 + nickels*5 + pennies
                     if amt == 100:
                         howManyWays += 1
                         print(f'fifty={fifty} quarter={quarter} dimes={dimes} nickels={nickels} pennies={pennies}')
